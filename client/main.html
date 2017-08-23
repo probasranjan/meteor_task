@@ -1,0 +1,24 @@
+<head>
+  <title>myapp2</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body class="color">
+
+ <form class="f_name">
+    <input type="text" class="f_name" placeholder="First Name" /> 
+  </form><br>
+  <form class="l_name">
+    <input type="text" class="l_name" placeholder="Last Name" /> 
+  </form><br>
+  <!--  <label for="dateofbirth">Date Of Birth</label> -->
+  <input type="date" name="dateofbirth" class="dateofbirth"><br><br>
+  <button type="button" name="" value="" class="button">submit</button>
+
+</body>
+<template name="data">
+  {{#each people}}
+  <li>{{text}}</li>
+  {{/each}}
+</template>
+
